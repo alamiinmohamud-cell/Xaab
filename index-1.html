@@ -524,5 +524,10 @@ document.addEventListener('keydown', e => {
 
 renderAll();
 </script>
+    <script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/Xaab/service-worker.js');
+  }
+    </script>
 </body>
 </html>
